@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    background-image: url("../images/images/wall.png");
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-bottom: 5px solid #ffd700;
+}
+
+.painel {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    height: 150px;
+    width: 135px;
+    background-color: #000000;
+    border: 5px solid transparent;
+    border-image: url("../images/images/wall.png") 30 stretch;
+    flex-direction: row;
+}
+
+.enemy {
+    background-image: url("../images/images/ralph.png");
+    background-size: cover;
+}
+
+.menu-lives {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second {
+    margin-top: 10px;
+}
+
+.reiniciar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+button {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: medium;
+}
+
+.painel .square:nth-child(n+13) {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .painel .square:nth-child(n+10) {
+        display: none; 
+    }
+}
